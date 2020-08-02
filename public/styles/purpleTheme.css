@@ -1,0 +1,11 @@
+:root {
+	--primary: #3e3e3e;
+	--secondary: #7852a9;
+	--headers: #ae884d;
+	--hover: #dbc2f3;
+	--border: 1px solid var(--secondary);
+	--border-hover: 1px solid var(--hover);
+	--leftRightBg: #b895dc;
+	--leftRightBorderBg: #af8ed1;
+	--leftRightBgShdw: 3px 3px 10px #f6ebe5;
+}
