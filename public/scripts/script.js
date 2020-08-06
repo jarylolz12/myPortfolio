@@ -7,15 +7,16 @@ const leftPanel = document.querySelector('.wala');
 const btnTheme = document.querySelectorAll('.btnTheme');
 const theme = document.querySelectorAll('.theme');
 
+const wrapper = document.querySelector('.wrapper');
+
 function hideMe() {
 	setTimeout(() => {
-		index.classList.add('hide');
-	}, 900);
+		wrapper.classList.add('hide');
+	}, 300);
 }
 button.addEventListener('click', () => {
 	section.classList.add('show');
-	section.classList.remove('tago');
-
+	wrapper.classList.add('tago');
 	hideMe();
 });
 

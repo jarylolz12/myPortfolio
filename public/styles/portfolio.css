@@ -18,14 +18,14 @@ h5,
 h6 {
 	margin: 0;
 	color: var(--primary);
-	transition: color 200ms;
+	transition: color 300ms;
 }
 
 a {
 	text-decoration: none;
 	color: var(--secondary);
 	list-style: none;
-	transition: color 200ms;
+	transition: color 300ms;
 }
 
 a:link {
@@ -45,7 +45,7 @@ button {
 	border: var(--border);
 	padding: 10px;
 	border-radius: 5px;
-	transition: color 200ms, border 200ms;
+	transition: color 300ms, border 300ms;
 }
 
 button:hover {
@@ -82,7 +82,28 @@ p {
 }
 
 /* ------------------------------------------- */
+
+.wrapper {
+	background-color: var(--overlay);
+	transition: background-color 300ms;
+	height: 100vh;
+	position: relative;
+}
+
+.wrapper::before {
+	content: '';
+	background: url('../../imgs/bgs.jpg');
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
 .index {
+	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -136,6 +157,10 @@ h3 {
 .colorTheme button:hover {
 	color: var(--hover);
 	border: var(--border-hover);
+}
+
+section {
+	display: none;
 }
 
 /* Right Side */
@@ -226,7 +251,7 @@ section .tuo .projects {
 	padding: 2em;
 	background-color: var(--leftRightBorderBg);
 	margin-bottom: 20px;
-	transition: transform 200ms;
+	transition: transform 300ms;
 }
 
 section .tuo .projects p {
@@ -236,7 +261,7 @@ section .tuo .projects p {
 
 section .tuo .projects h3 {
 	color: var(--secondary);
-	transition: color 200ms;
+	transition: color 300ms;
 	margin: 0;
 }
 
@@ -305,7 +330,7 @@ section .projects li {
 .indexNextPg ul li {
 	border: 1px solid var(--leftRightBg);
 	background-color: var(--leftRightBorderBg);
-	transition: transform 200ms;
+	transition: transform 300ms;
 }
 
 .indexNextPg ul li:hover {
@@ -339,7 +364,8 @@ section .wala span {
 .show {
 	width: 100%;
 	opacity: 100%;
-	animation: showMe 1s;
+	animation: showMe 350ms;
+	display: block;
 }
 @keyframes showMe {
 	from {
@@ -352,8 +378,8 @@ section .wala span {
 
 .tago {
 	opacity: 0%;
-	animation: visibility 1s;
-	display: none;
+	animation: visibility 350ms;
+	display: none; /*pwede ni siya tanggalon mao ni magpa instant*/
 }
 @keyframes visibility {
 	from {
