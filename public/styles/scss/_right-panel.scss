@@ -5,10 +5,6 @@
     margin: 3%;
 }
 
-.footer-right {
-	display: none;
-}
-
 .projects {
     padding: 1em;
     background-color: $secondary-bg;
@@ -72,6 +68,10 @@
         @include grid-contents;
         margin: 0;
     }
+}
+
+.footer-right{
+    display: none;
 }
 
 .bckToTop {
