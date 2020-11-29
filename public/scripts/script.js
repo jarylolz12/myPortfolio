@@ -4,7 +4,7 @@ const section = document.querySelector('section');
 const rightPanel = document.querySelector('.tuo');
 const leftPanel = document.querySelector('.wala');
 
-const btnTheme = document.querySelectorAll('.btnTheme');
+const btnTheme = document.querySelectorAll('.Theme');
 const theme = document.querySelectorAll('.theme');
 
 const wrapper = document.querySelector('.wrapper');

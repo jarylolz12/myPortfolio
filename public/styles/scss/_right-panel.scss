@@ -1,0 +1,79 @@
+@import "mixins";
+.tuo {
+    float: right;
+    width: 45.5%;
+    margin: 3%;
+}
+
+.footer-right {
+	display: none;
+}
+
+.projects {
+    padding: 1em;
+    background-color: $secondary-bg;
+    transition: transform 300ms;
+    margin: .5rem auto;
+
+    &:hover {
+        transform: scale(1.1);
+        color: $primary;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-top: 10px;
+    }
+    
+    & li {
+        margin-right: 11px;
+        font-size: 1.2em;
+    }
+
+}
+
+.skills {
+    margin-bottom: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    .imgSkills {
+        width: 150px;
+        height: 150px;
+        border-radius: unset;
+        border: unset;
+        margin: 5px;
+    }
+
+}
+
+.gridMe {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "primary college" "secondary college";
+    .primary {
+        grid-area: primary;
+        @include grid-contents;
+        margin: 0;
+    }
+
+    .secondary {
+        grid-area: secondary;
+        @include grid-contents;
+        margin: 0;
+    }
+
+    .college {
+        grid-area: college;
+        @include grid-contents;
+        margin: 0;
+    }
+}
+
+.bckToTop {
+    display: none;
+}

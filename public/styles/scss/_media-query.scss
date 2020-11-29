@@ -1,0 +1,73 @@
+@media only screen and (max-width: 810px) {
+	#taas {
+		margin: auto 3rem
+	}
+
+	.tuo {
+		display: block;
+		float: unset;
+		padding: unset;
+		width: unset;
+		margin: 0;
+	}
+
+	.wala {
+		display: block;
+		position: unset;
+		height: unset;
+		width: 100%;
+		padding: unset;
+		margin: 0;
+	}
+
+	.bckToTop {
+		display: block;
+		text-align: center;
+		
+		a{
+			color: $primary;
+
+			&:hover{
+				color: $secondary;
+			}
+		}
+	}
+
+	.footer-left {
+		display: none;
+	}
+
+	.footer-right {
+		@include footers;
+	}
+
+	.h1s {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 590px) {
+	#taas {
+		margin: auto 1.5rem
+	}
+	
+	.tuo {
+		display: block;
+		width: 100%;
+		float: unset;
+	}
+		
+	.skills	.imgSkills {
+			width: 90px;
+			height: 90px;
+			border-radius: unset;
+			border: unset;
+			margin: 5px;
+		}
+
+	.gridMe {
+		grid-template-areas: "primary" "secondary" "college";
+		margin: auto;
+		text-align: center;
+	}
+}

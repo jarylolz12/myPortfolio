@@ -1,0 +1,33 @@
+@import 'config';
+@mixin button {
+	background-color: transparent;
+	font: inherit;
+	border-radius: 5px;
+	margin-top: .5rem;
+}
+
+@mixin grid-contents {
+	background-color: $secondary-bg;
+	padding: 1rem;
+	margin: 0 1.5rem;
+}
+
+@mixin footers {
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
+	img {
+		width: 40px;
+		height: 40px;
+		margin-right: 1rem;
+		border: none;
+	}
+
+	a {
+		margin-right: 1rem;
+		font-size: 1.5em;
+	}
+}

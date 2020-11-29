@@ -1,0 +1,45 @@
+@import 'mixins';
+.wala {
+	position: fixed;
+    width: 45.5%;
+    margin: 3%;
+}
+
+.about-me {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    text-align: center;
+    width: 100%;
+
+    * ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    * li {
+        border: 1px solid var(--leftRightBg);
+        background-color: $secondary-bg;
+        margin: .5rem auto;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $primary;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 1em;
+    }
+
+}
+
+.footer-left {
+	@include footers;
+}

@@ -1,0 +1,19 @@
+$primary: #35acff;
+$secondary: #a6a6a6;
+$hover: lighten($primary, 10%);
+$bg-color: #212a2f;
+$secondary-bg: lighten($bg-color, 5%);
+$overlay-color: rgba(33, 42, 47, 0.7);
+
+$border: 1px solid $primary;
+
+// --primary: #a6a6a6;
+// --secondary: #35acff;
+// /* --headers: red; */
+// --hover: #35acff;
+// --border: 1px solid var(--secondary);
+// --border-hover: 1px solid var(--hover);
+// --leftRightBg: #212a2f;
+// --leftRightBorderBg: #263036;
+// --leftRightBgShdw: 3px 3px 10px #09141a;
+// --overlay: rgba(33, 42, 47, 0.70);
